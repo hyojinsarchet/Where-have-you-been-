@@ -13,16 +13,17 @@ router.get('/', (req, res) => {
 })
 
 
-// create new countries
-router.post('/', (req, res) => {
-    Been.create(req.body)
-        .then(beens => res.json(beens))
-})
-
 // get a country by its id: '/:id'
 // grab name using mongoose
 router.get('/:name', (req, res) => {
     Been.findOne({name: req.params.name})
+        .then(beens => res.json(beens))
+})
+
+
+// create new countries
+router.post('/', (req, res) => {
+    Been.create(req.body)
         .then(beens => res.json(beens))
 })
 

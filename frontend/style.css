@@ -5,11 +5,11 @@
       height: 100%;
       display: grid;
       font-family: 'Roboto', sans-serif;
-      grid-template-columns: 800px 1fr;
-      grid-template-rows: 1fr 1fr 4fr;
+      grid-template-columns: 1000px 1fr;
+      grid-template-rows: 80px 1fr 4fr;
       grid-template-areas: "title title"
                            "map aside-top"
-                           "map aside-list"
+                           "map aside-top"
                            "map aside-list"
                            "map aside-list"
                            "map aside-list"
@@ -17,15 +17,41 @@
 
 .title {
       grid-area: title;
+      text-align: center;
+      background-color: #336cd6;
+      color: white;
 }
 #map {
       grid-area: map;
+      height: 100%;
+      width: 100%;
 }
 
 .aside-top {
       grid-area: aside-top;
+      /* display: flex; */
 }
 
 .aside-list {
       grid-area: aside-list;
+      margin-top: 50px;
+}
+
+aside {
+      margin: 50px auto auto 50px;
+}
+
+.country-input {
+      height: 25px;
+      width: 200px;
+}
+
+.submit {
+      height: 15px;
+      width: 50px;
+      margin: auto;
+}
+
+h1 {
+      font-family: 'Righteous', cursive;
 }
