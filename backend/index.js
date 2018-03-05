@@ -20,7 +20,7 @@ app.use(cors())
 
 // by using './been', it's not necessary to add './been' in the 'controllers' file.
 // the route to connect with frontend part
-app.use('/been', beenController)
+app.use('/beens', beenController)
 
 // start local server
 app.listen(3000, () => {
