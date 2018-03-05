@@ -1,7 +1,7 @@
 const mongoose = require('./connection')
 const seeds = require('./seeds')
 
-const Been = require('../models/Been')
+const Been = mongoose.model('Been')
 
 mongoose.Promise = Promise
 

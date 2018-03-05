@@ -1,2 +1,27 @@
-/* Should I store country data here?
-ex) name, lat/lng */
+[
+  {
+    "name": "United States",
+    "lat": 37.09024,
+    "lng": -95.712891
+  },
+  {
+    "name": "Canada",
+    "lat": 56.130366,
+    "lng": -106.346771
+  },
+  {
+    "name": "Brazil",
+    "lat": -14.235004,
+    "lng": -51.92528
+  },
+  {
+    "name": "South Korea",
+    "lat": 35.907757,
+    "lng": 	127.766922
+  },
+  {
+    "name": "Spain",
+    "lat": 40.463667,
+    "lng": -3.74922
+  }
+]
