@@ -1,0 +1,11 @@
+<h2>Edit countries:</h2>
+
+<form action="/beens/{{id}}?_method=put" method="POST">
+  <p>
+    <label for="name">Name:</label>
+    <input type="text" value="{{this.name}}" name="name">
+  </p>
+
+
+  <input type="submit" value="Update">
+</form>

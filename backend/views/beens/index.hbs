@@ -1,0 +1,11 @@
+<h1> Country Lists </h1>
+
+<ul>
+    {{#each beens}}
+    <li>
+        <a href="/beens/{{this.id}}">{{this.name}}</a>
+    </li>
+    {{/each}}
+</ul>
+
+<a href="beens/new">add a country</a>
