@@ -16,6 +16,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use(methodOverride("_method"))
 app.use(cors())
+app.use(express.static('public'))
 
 // to check if it's connected to server
 app.get('/', (req, res) => {

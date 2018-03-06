@@ -1,3 +1,43 @@
-<h1> Countries </h1>
+<!-- <h1> Countries </h1> -->
 
-<a href="/beens"> Countries you've visited </a>
+<!-- <a href="/beens"> Countries you've visited </a> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Where have you been?</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+  <body>
+      <div class="container">
+          <header class="title">
+              <h1>Where have you been?</h1>
+          </header>
+          <main id="map">
+          </main>
+          <aside>
+              <form class="aside-top">
+              <a href="/beens"> Countries you've visited </a>
+              </form>
+              <!-- <form class="aside-top">
+                  <input class="country-input" type="text" name="name" placeholder="Type the country you have been"><br/>
+                  <input class="submit" type="submit" value="submit">
+              </form> -->
+              <!-- <form class="update hidden">
+                  <input type="text" name="name" placeholder="Type the country you have been"><br/>
+                  <input class="submit" value="update">
+              </form> -->
+              <!-- <h3>You have been to...</h3> -->
+              <ol class="aside-list">
+
+              </ol>
+          </aside>
+      </div>
+      <script src="app.js"></script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMNBtEzJyAvLrGDgO3m-_KNTHHfc42FK8&callback=initMap">
+      </script>
+  </body>
+</html>
