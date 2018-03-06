@@ -9,7 +9,7 @@
       grid-template-rows: 80px 1fr 4fr;
       grid-template-areas: "title title"
                            "map aside-top"
-                           "map aside-top"
+                           "map aside-list"
                            "map aside-list"
                            "map aside-list"
                            "map aside-list"
@@ -29,7 +29,6 @@
 
 .aside-top {
       grid-area: aside-top;
-      /* display: flex; */
 }
 
 .aside-list {

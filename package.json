@@ -14,7 +14,6 @@
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "hbs": "^4.0.1",
-    "materialize-css": "^0.100.2",
     "method-override": "^2.3.10",
     "mongodb": "^3.0.4",
     "mongoose": "^5.0.8",

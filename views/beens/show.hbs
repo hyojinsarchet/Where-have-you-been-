@@ -1,7 +1,10 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
 <h2>Name: {{this.name}}</h2>
 <hr>
 
-<a href="/beens/edit/{{this.id}}">Edit</a>
+<a class="waves-effect waves-light btn-large" href="/beens/edit/{{this.id}}">Edit</a>
 <form action="/beens/{{id}}?_method=delete" method="POST">
-    <input type="submit" value="Delete">
+    <input class="waves-effect waves-light btn-large" type="submit" value="Delete">
 </form>

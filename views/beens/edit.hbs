@@ -1,11 +1,14 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
 <h2>Edit countries:</h2>
 
 <form action="/beens/{{id}}?_method=put" method="POST">
   <p>
-    <label for="name">Name:</label>
+    <label for="name">Country:</label>
     <input type="text" value="{{this.name}}" name="name">
   </p>
 
 
-  <input type="submit" value="Update">
+  <input class="waves-effect waves-light btn-large" type="submit" value="Update">
 </form>

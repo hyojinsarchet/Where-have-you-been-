@@ -1,11 +1,16 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
 <h1> Country Lists </h1>
 
-<ul>
-    {{#each beens}}
+<div class="collection">
+<ol>
+  {{#each beens}}
     <li>
-        <a href="/beens/{{this.id}}">{{this.name}}</a>
+        <a href="/beens/{{this.id}}" class="collection-item">{{this.name}}</a>
     </li>
     {{/each}}
 </ul>
+</div>
 
-<a href="beens/new">add a country</a>
+<a href="beens/new" class="waves-effect waves-light btn-large">Add a country!</a>
