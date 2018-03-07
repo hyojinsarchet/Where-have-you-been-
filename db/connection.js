@@ -15,5 +15,12 @@ mongoose
   .then(connection => console.log(`Connection established to db`))
   .catch(connectionError => console.log('Connection failed!', connectionError))
 
+// use the MLab URI (the link that connects us to the MLab database)
+if (process.env.NODE_ENV == "production") {
+  mongoose.connect(process.env.MLAB_URL)
+} else {
+  mongoose.connect("mongodb://localhost/Where-have-you-been?");
+}
+
 // export globally
 module.exports = mongoose
