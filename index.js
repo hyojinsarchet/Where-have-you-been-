@@ -27,7 +27,15 @@ app.get('/', (req, res) => {
 // the route to connect with frontend part
 app.use('/beens', beenController)
 
-// start local server
-app.listen(3000, () => {
-    console.log('Running on 3000!')
+// accomodate Heroku's production port and our own local development port
+
+app.set('port', process.env.PORT || 3000)
+
+app.listen(app.get('port'), () => {
+    console.log(`loaded on ${app.get('port')}`)
 })
+
+// start local server
+// app.listen(3000, () => {
+//     console.log('Running on 3000!')
+// })
