@@ -29,11 +29,13 @@
 
 .aside-top {
       grid-area: aside-top;
+      margin-bottom: 40px;
+      margin-top: 40px;
 }
 
 .aside-list {
       grid-area: aside-list;
-      margin-top: 50px;
+      margin-top: 60px;
 }
 
 aside {
@@ -51,20 +53,48 @@ aside {
       margin: auto;
 }
 
-h1 {
+h1, h3, li {
       font-family: 'Righteous', cursive;
 }
 
-#floating-panel {
-  /* position: absolute; */
-  top: 10px;
-  left: 25%;
-  z-index: 5;
-  background-color: #fff;
-  padding: 5px;
-  border: 1px solid #999;
-  text-align: center;
-  font-family: 'Roboto', 'sans-serif';
-  line-height: 30px;
-  padding-left: 10px;
+.listTitle {
+   color: #336cd6;
 }
+
+#floating-panel {
+    top: 10px;
+    left: 25%;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid lightgray;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #336cd6;
+
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #f20911;
+}
+
+hr {
+    /* color: #D3D3D3; */
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+#address {
+    height: 30px;
+    width: 200px;
+}
+
+/* learned hr tag style from this site below
+https://css-tricks.com/examples/hrs/ */
