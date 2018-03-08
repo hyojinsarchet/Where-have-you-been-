@@ -22,9 +22,9 @@
 
 ### How to run
 
-- Clone this repository and open 'index.html' (Using Chrome is recommended)
-- Copy and paste this link.
-- Or click here.
+- Clone this repository and open it on local server (http://localhost:3000/)
+- Copy and paste this link. (https://sheltered-scrubland-75667.herokuapp.com/)
+- Or click here. ![link](https://sheltered-scrubland-75667.herokuapp.com/)
 
 
 ### Used tools in the project
