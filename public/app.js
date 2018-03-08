@@ -1,3 +1,4 @@
+// import map from google map api
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 38.904873, lng: -77.034028},
@@ -30,7 +31,7 @@ function geocodeAddress(geocoder, resultsMap) {
             })
             var circle = new google.maps.Circle({
                 map: marker.getMap(),
-                radius: 16093, // 10 miles in metres
+                radius: 16093,
                 fillColor: '#AA0000'
             })
             circle.bindTo('center', marker, 'position')
@@ -42,7 +43,8 @@ function geocodeAddress(geocoder, resultsMap) {
 
 google.maps.event.addDomListener(window, "load", initMap);
 
-// * read and adopted some codes about 'geocoder' from these pages below.
+// * read/learned about 'google maps api', 'geocoder' from these pages below.
+// https://developers.google.com/maps/documentation/javascript/
 // https://stackoverflow.com/questions/36007724/add-marker-on-google-maps
 // https:developers.google.com/maps/documentation/javascript/geocoding
 

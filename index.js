@@ -7,10 +7,10 @@ const Been = require('./db/models/Been')
 const methodOverride = require("method-override")
 const beenController = require('./controllers/been')
 
-// create/ set up the express app
+// create/set up the express app
 const app = express()
 
-// configure express to use bodyParser
+// configure express to use the middlewares
 app.set("view engine", "hbs")
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
@@ -18,19 +18,17 @@ app.use(methodOverride("_method"))
 app.use(cors())
 app.use(express.static('public'))
 
-// to check if it's connected to server
+// define the route
+// render home page (localhost:3000)
 app.get('/', (req, res) => {
     res.render('index')
 })
 
-// by using './been', it's not necessary to add './been' in the 'controllers' file.
-// the route to connect with frontend part
+//
 app.use('/beens', beenController)
 
 // accomodate Heroku's production port and our own local development port
-
 app.set('port', process.env.PORT || 3000)
-
 app.listen(app.get('port'), () => {
     console.log(`loaded on ${app.get('port')}`)
 })
