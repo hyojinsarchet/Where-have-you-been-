@@ -1,25 +1,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
 <nav style="background-color: #2196f3;">
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo center">Where have you been?</a>
-    <ul id="nav-mobile" class="left hide-on-med-and-down">
-      <li><a href="">Sing Up</a></li>
-      <li><a href="">Sign In</a></li>
-      <!-- <li><a href="collapsible.html">JavaScript</a></li> -->
-    </ul>
-  </div>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Where have you been?</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="">Sign Up</a></li>
+            <li><a href="">Sign In</a></li>
+        </ul>
+    </div>
 </nav>
-
-<br><br>
-
+<br>
 <div class="container">
-<h2>Name: {{this.name}}</h2>
-<hr>
-
-<a class="waves-effect waves-light btn-large" href="/beens/edit/{{this.id}}">Edit</a>
-<form action="/beens/{{id}}?_method=delete" method="POST">
-    <input class="waves-effect waves-light btn-large" type="submit" value="Delete" style="background-color: #757575;">
-</form>
-
+    <h2>Name: {{this.name}}</h2>
+    <hr>
+    <a class="waves-effect waves-light btn-large" href="/beens/edit/{{this.id}}">Edit</a>
+    <form action="/beens/{{id}}?_method=delete" method="POST">
+        <input class="waves-effect waves-light btn-large" type="submit" value="Delete" style="background-color: #757575;">
+    </form>
 </div>

@@ -6,8 +6,8 @@
 - This is the second project in the Web Development Immersive Program from GA.
 - It is a full-stack application built according to my own idea, design, and front- and back-end skills.
 - It has complete CRUD functionality implemented with RESTful routes.
-- This application is deployed on Heroku.
-(https://sheltered-scrubland-75667.herokuapp.com/)
+- This application is deployed on Heroku. (https://sheltered-scrubland-75667.herokuapp.com/)
+- There is a YouTube Video about this application to help you understand better. (link here)
 
 
 ### How to use this 'Where have you been?' application
@@ -19,12 +19,14 @@
 
 
 ### How to run
+
 - Clone this repository and open 'index.html' (Using Chrome is recommended)
 - Copy and paste this link.
 - Or click here.
 
 
 ### Used tools in the project
+
  - Html
  - CSS
  - JavaScript
@@ -34,6 +36,8 @@
  - MongoDB
  - Mongoose
  - NPM
+ - Google Map API
+
 
  ### The main page look
 
