@@ -21,7 +21,7 @@
 * Clone this repository and open it on local server (http://localhost:3000/)
 * Or click [here](https://wherehaveyoubeen.herokuapp.com/)
 
-### Used tools in the project
+### Built with
 
 |    Front-End     |  Back-End  |
 | :--------------: | :--------: |
